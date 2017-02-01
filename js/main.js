@@ -20,7 +20,7 @@
 				console.log(j);
 				
 				//tmnlCon.innerHTML += '<div class="large-12 columns"></div>';	
-				var newDiv = tmnlCon.createElement('div');
+				//var newDiv = tmnlCon.createElement('div');
 
 				//newDiv;			
 				var tmnlObj = tmnlObject[j];
