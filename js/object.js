@@ -22,17 +22,17 @@ var tmnlObject = {
 }
 var srvObject = {
 	one:{
-		pic: "images/goblin.png",
+		pic: "<p class=\'centerImg\'><img class=\"tmnlImg\" src=\'images/goblin.png\'></p>",
 		name: "Magical Monster Removal",
 		desc: "Are the local goblins destroying your crops? Stomping round? Driving you crazy? Introducing Monster Removal from Hat & Cloak. You’ll be smitten!"
 	},
 	two:{
-		pic: "images/potions.png",
+		pic: "<p class=\'centerImg\'><img class=\"tmnlImg\" src=\'images/potions.png\'></p>",
 		name: "Poultices and Charms",
 		desc: "Have an itch that won’t scratch? A streak of bad luck? An curse placd on your family from eons passed? We’ve got the solution for you!"
 	},
 	three:{
-		pic: "images/mystery.png",
+		pic: "<p class=\'centerImg\'><img class=\"tmnlImg\" src=\'images/mystery.png\'></p>",
 		name: "Mystery Solving",
 		desc: "Have you been noticing strange cloaked gatherings by moonlight? Has the local innkeeper been talking to an unknown entity? Or maybe your powerful hierloom crystals have suddenly gone missing, corresponding with a faint blue beacon in the distance? We’ll get to the bottom of this mystery!"
 	}
@@ -40,7 +40,7 @@ var srvObject = {
 
 var teamObject ={
 	one:{
-		pic: "images/ian.png",
+		pic: "<p class=\'centerImg\'><img class=\"tmnlImg\" src=\'images/ian.png\'></p>",
 		name: "Fabienne \'Ian\'",
 		role: "Natural Magicks and Wildlife Expert",
 		age: "Age: Eleven",
@@ -48,7 +48,7 @@ var teamObject ={
 		skill: "I can converse with a variety of animal and monster species."
 	},
 	two:{
-		pic: "images/lenny.png",
+		pic: "<p class=\'centerImg\'><img class=\"tmnlImg\" src=\'images/lenny.png\'></p>",
 		name: "Lenore \'Lenny\'",
 		role: "Optical Magicks and Key Analyst",
 		age: "Eleven and a half",
