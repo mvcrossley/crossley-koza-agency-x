@@ -23,36 +23,36 @@ var tmnlObject = {
 var srvObject = {
 	one:{
 		pic: "<p class=\'centerImg\'><img class=\"tmnlImg\" src=\'images/goblin.png\'></p>",
-		name: "Magical Monster Removal",
-		desc: "Are the local goblins destroying your crops? Stomping round? Driving you crazy? Introducing Monster Removal from Hat & Cloak. You’ll be smitten!"
+		name: "<h2>Magical Monster Removal</h2>",
+		desc: "<p>Are the local goblins destroying your crops? Stomping round? Driving you crazy? Introducing Monster Removal from Hat & Cloak. You’ll be smitten!</p>"
 	},
 	two:{
 		pic: "<p class=\'centerImg\'><img class=\"tmnlImg\" src=\'images/potions.png\'></p>",
-		name: "Poultices and Charms",
-		desc: "Have an itch that won’t scratch? A streak of bad luck? An curse placd on your family from eons passed? We’ve got the solution for you!"
+		name: "<h2>Poultices and Charms</h2>",
+		desc: "<p>Have an itch that won’t scratch? A streak of bad luck? An curse placd on your family from eons passed? We’ve got the solution for you!</p>"
 	},
 	three:{
 		pic: "<p class=\'centerImg\'><img class=\"tmnlImg\" src=\'images/mystery.png\'></p>",
-		name: "Mystery Solving",
-		desc: "Have you been noticing strange cloaked gatherings by moonlight? Has the local innkeeper been talking to an unknown entity? Or maybe your powerful hierloom crystals have suddenly gone missing, corresponding with a faint blue beacon in the distance? We’ll get to the bottom of this mystery!"
+		name: "<h2>Mystery Solving</h2>",
+		desc: "<p>Have you been noticing strange cloaked gatherings by moonlight? Has the local innkeeper been talking to an unknown entity? Or maybe your powerful hierloom crystals have suddenly gone missing, corresponding with a faint blue beacon in the distance? We’ll get to the bottom of this mystery!</p>"
 	}
 }
 
 var teamObject ={
 	one:{
 		pic: "<p class=\'centerImg\'><img class=\"tmnlImg\" src=\'images/ian.png\'></p>",
-		name: "Fabienne \'Ian\'",
-		role: "Natural Magicks and Wildlife Expert",
-		age: "Age: Eleven",
-		height: "Tall enough",
-		skill: "I can converse with a variety of animal and monster species."
+		name: "<h2>Fabienne \'Ian\'<h2>",
+		role: "<p>Natural Magicks and Wildlife Expert</p>",
+		age: "<p>Age: Eleven</p>",
+		height: "<p>Tall enough</p>",
+		skill: "<p>I can converse with a variety of animal and monster species.</p>"
 	},
 	two:{
 		pic: "<p class=\'centerImg\'><img class=\"tmnlImg\" src=\'images/lenny.png\'></p>",
-		name: "Lenore \'Lenny\'",
-		role: "Optical Magicks and Key Analyst",
-		age: "Eleven and a half",
-		height: "A bit tall",
-		skill: "I am especially good at finding clues and hidden objects"
+		name: "<h2>Lenore \'Lenny\'</h2>",
+		role: "<p>Optical Magicks and Key Analyst</p>",
+		age: "<p>Eleven and a half</p>",
+		height: "<p>A bit tall</p>",
+		skill: "<p>I am especially good at finding clues and hidden objects</p>"
 	}
 }
