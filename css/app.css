@@ -44,6 +44,7 @@
 #footerlogo
 {
 	width: 50px;
+	margin-top: 10px;
 }
 
 #footNav ul
@@ -82,54 +83,104 @@
 
 	#mainNav
 	{
-		text-align: center;
 		margin-top: 10px;
 	}
 
 	#mainNav ul li
 	{
-		display: inline;
 		margin-right: 75px;
 		margin-left: 75px;
 	}
 
-	#mainNav ul li a
-	{
-		color: white;
-		font-family: 'playfair_displayregular';
-		font-size: 20px;
-	}
-
-	#footerDiv
-	{
-		background-color: #cfcfe9;
-	}
-
-	#footerlogo
-	{
-		width: 50px;
-	}
-
 	#footNav ul
 	{
-		background-color: #cfcfe9;
 		margin-top: 15px;
 	}
 
 	#footNav ul li
 	{
-		display: inline;
-		background-color: #cfcfe9;
 		margin-left: 75px;
 	}
 
 	#footNav ul li a
 	{
-		color: #52527c;
-		font-family: 'playfair_displayregular';
 		font-size: 15px;
 	}
 
+}
+
+/*HOME STYLES START HERE*/
+
+#homeTitle
+{
+	font-family: "playfair_displaybold";
+	font-size: 25px;
+	letter-spacing: 3px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	color: #2d2d4d;
+	text-align: center;
+}
+
+#mission
+{
+	font-family: "latolight";
+	color: #2d2d4d;
+	padding: 15px;
+}
+
+.pageTitle
+{
+	font-family: "fonts/abril_fatfaceregular";
+	color: #52527c;
+	font-size: 27px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/*HOME MEDIA QUERIES HERE*/
+
+@media (min-width: 900px){
+	#homeTitle
+	{
+		text-align: left;
+		margin-top: 75px;
+	}
+
+	#homePic
+	{
+		width: 700px;
+	}
+
+	#mission
+	{
+		padding-right: 50px;
+	}
+
+}
+
+@media (min-width: 650px max-width: 900px){
+	#mission
+	{
+		padding-right: 50px;
+	}
+
+}
+
+/*SERVICES STYLES START HERE*/
+
+#pricing p
+{
+	text-align: center;
+	font-family: "latolight";
+	margin-top: 25px;
+	margin-bottom: 50px;
+	color: #52527c;
+}
+
+.bolder
+{
+	font-weight: bold;
 }
 
 /*FONTS CSS STARTS HERE*/
@@ -176,8 +227,8 @@
 
 @font-face {
     font-family: 'latolight';
-    src: url('lato-light-webfont.woff2') format('woff2'),
-         url('lato-light-webfont.woff') format('woff');
+    src: url('../fonts/lato-light-webfont.woff2') format('woff2'),
+         url('../fonts/lato-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
