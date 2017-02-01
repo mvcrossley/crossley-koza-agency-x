@@ -6,11 +6,11 @@
 	homePage = document.querySelector('#home'),
 	i;
 
+	//console.log(tmnlObject);
 
 		for(i=0; i<navButton.length; i++){
 			navButton[i].addEventListener('click', clickedButton, false);
 			navButton[i].addEventListener('click', function(e) {makeRequest(e.currentTarget.id+'.html');}, false);
-
 
 
 			function clickedButton(e){
@@ -32,24 +32,37 @@
 				httpRequest.send(); 
 			}
 
-			function showResult()
+			function showResult(e)
 			{
 				if(httpRequest.readyState === XMLHttpRequest.DONE) {
 					if(httpRequest.status === 200) {
 						var response =  httpRequest.responseText;
 						pageSwitch.innerHTML = response;
+
+						var tmnlCon = document.querySelector("#tmnlCon");
+
+						if(e.currentTarget.id == "home")
+						{
+							tmnlContent();
+						}
+						else
+						{
+							console.log("Nope!");
+						}
+
+						function tmnlContent(){
+							for (var i in tmnlObject){
+								tmnlCon.innerHTML = '<div class=\'testimonial small-12 medium-4 large-4 columns\'>'+tmnlObject[i].pic+tmnlObject[i].name+tmnlObject[i].case+tmnlObject[i].testimonial+'</div>';
+							}
+						}
+
 					}else{
 						console.log('There was a problem with your request.');
 					}
 				}
 			}
-
-			
-
 			
 			window.addEventListener('load', function() {makeRequest('home.html');}, false);
-		
-		
 	}
 
 })();
