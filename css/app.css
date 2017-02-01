@@ -113,7 +113,7 @@
 #homeTitle
 {
 	font-family: "playfair_displaybold";
-	font-size: 30px;
+	font-size: 25px;
 	letter-spacing: 3px;
 	margin-top: 30px;
 	margin-bottom: 15px;
@@ -124,7 +124,17 @@
 #mission
 {
 	font-family: "latolight";
+	color: #2d2d4d;
 	padding: 15px;
+}
+
+.pageTitle
+{
+	font-family: "fonts/abril_fatfaceregular";
+	color: #52527c;
+	font-size: 27px;
+	text-align: center;
+	margin-top: 20px;
 }
 
 /*HOME MEDIA QUERIES HERE*/
@@ -149,12 +159,6 @@
 }
 
 @media (min-width: 650px max-width: 900px){
-
-	#homePic
-	{
-		width: 700px;
-	}
-
 	#mission
 	{
 		padding-right: 50px;
