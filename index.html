@@ -4,30 +4,47 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Hat and Cloak | Investigative Bureau</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
 
   </head>
   
   <body>
-    <div class="row" id="mainHeader">
-    	<p>This is where the header and nav bar will sit static.</p>
-    	<div id="mainNav">
-    		<ul>
-    			<li class="navButton" id="home"><a>Home</a></li>
-    			<li class="navButton" id="team"><a>Team</a></li>
-    			<li class="navButton" id="services"><a>Services</a></li>
-    		</ul>
-    	</div>
+    <div id="logoDiv" class="row expanded">
+    <h2 class="hide">The Logo Section</h2>
+        <div id="logo" class="small-6 medium-4 large-4 small-centered columns">
+            <object type="image/svg+xml" data="images/logo.svg"></object>
+        </div>
+    </div>
+    <div id="navDiv" class="row expanded">
+    <h2 class="hide">The Navigation Bar</h2>
+        <div id="mainNav" class="small-12 medium-12 large-12 columns">
+            <ul>
+                <li class="navButton" id="home"><a>Home</a></li>
+                <li class="navButton" id="team"><a>Team</a></li>
+                <li class="navButton" id="services"><a>Services</a></li>
+            </ul>
+        </div>
     </div>
 
-    <div class="row" id="switchSection">
-
+    <div id="switchSection">
     </div>
 
-    <div class="row" id="mainFooter">
-    	<p>This is the static footer.</p>
+    <div id="footerDiv" class="row expanded">
+    <h2 class="hide">The Footer</h2>
+        <div class="small-2 medium-2 large-2 float-left columns">
+            <object type="image/svg+xml" data="images/footlogo.svg" id="footerlogo"></object>
+        </div>
+        <div class="small-10 medium-10 large-10 float-right columns">
+            <div id="footNav">
+                <ul>
+                    <li class="navButton" id="home"><a>Home</a></li>
+                    <li class="navButton" id="team"><a>Team</a></li>
+                    <li class="navButton" id="services"><a>Services</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <script src="js/object.js"></script>
