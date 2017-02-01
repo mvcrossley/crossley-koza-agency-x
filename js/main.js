@@ -4,46 +4,58 @@
 	var name = document.querySelector(".tmnlName");
 	var caseP = document.querySelector(".tmnlCase");
 	var text = document.querySelector(".tmnlText");
-	var tmnlCon = document.querySelectorAll(".tmnlCon");
 
-	console.log(tmnlObject);
+	var tmnlCon = document.querySelector("#tmnlCon");
+
 
 	/*tmnlObject.forEach(name, function(){
 		console.log();
 		tmnlCon.innerHTML = '<h2>'+element+'</h2>';
 	});*/
 
-	function tmnlContent(){
-		tmnlCon.innerHTML="";
 
-			for(var j in tmnlObject){
-				console.log(j);
+	// function tmnlContent(){
+
+	// 	console.log (tmnlCon);
+
+	// 	for (var i in tmnlObject){
+	// 		var newDiv = document.createElement('div');
+	// 		newDiv.className = 'object';
+	// 		newDiv.innerHTML = '<div class=\'testimonial small-12 medium-4 large-4 columns\'>'+tmnlObject[i].pic+tmnlObject[i].name+tmnlObject[i].case+tmnlObject[i].testimonial+'</div>';
+	// 		document.body.appendChild(newDiv);
+	// 	}
+
+
+
+	// 		// for(var j in tmnlObject){
+	// 		// 	//console.log(j);
 				
-				//tmnlCon.innerHTML += '<div class="large-12 columns"></div>';	
-				//var newDiv = tmnlCon.createElement('div');
+	// 		// 	//tmnlCon.innerHTML += '<div class="large-12 columns"></div>';	
+	// 		// 	//var newDiv = tmnlCon.createElement('div');
 
-				//newDiv;			
-				var tmnlObj = tmnlObject[j];
+	// 		// 	//newDiv;			
+	// 		// 	var tmnlObj = tmnlObject[j];
 
-				for (var i in tmnlObj){
-					console.log(i);
-					console.log(tmnlObj[i]);
-					var arrayOutput = document.createElement('div');
-					var tObj = tmnlObj[i];
+	// 		// 	for (var i in tmnlObj){
+	// 		// 		//console.log(i);
+	// 		// 		//console.log(tmnlObj[i]);
+	// 		// 		var arrayOutput = document.createElement('div');
+	// 		// 		var tObj = tmnlObj[i];
 					
-						if(i === 'name'){
-							var newN = document.createElement('p');
-						}
+	// 		// 			if(i === 'name'){
+	// 		// 				var newN = document.createElement('p');
+	// 		// 			}
 
 
-					arrayOutput.className = 'object';
-					document.body.appendChild(arrayOutput);
+	// 		// 		arrayOutput.className = 'object';
+	// 		// 		document.body.appendChild(arrayOutput);
 					
-				}
-			}
-	}
+	// 		// 	}
+	// 		// }
+	// }
 
-	window.addEventListener("load", tmnlContent, false);
+	//window.addEventListener("load", tmnlContent, false);
+
 
 	/*
 		for (var i in tmnlObject){

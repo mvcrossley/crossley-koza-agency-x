@@ -138,6 +138,33 @@
 	margin-top: 20px;
 }
 
+.testimonial h2
+{
+	font-family: 'playfair_displaybold';
+	color: #2d2d4d;
+	font-size: 25px;
+	text-align: center;
+}
+
+.testimonial p
+{
+	font-family: 'playfair_displayregular';
+	color: #2d2d4d;
+	font-size: 15px;
+	text-align: center;
+}
+
+.tmnlImg
+{
+	width: 200px;
+	margin-top: 50px;
+}
+
+.centerImg
+{
+	text-align: center;
+}
+
 /*HOME MEDIA QUERIES HERE*/
 
 @media (min-width: 900px){
