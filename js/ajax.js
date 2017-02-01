@@ -6,6 +6,7 @@
 	homePage = document.querySelector('#home'),
 	i;
 
+	console.log(tmnlObject);
 
 		for(i=0; i<navButton.length; i++){
 			navButton[i].addEventListener('click', clickedButton, false);
