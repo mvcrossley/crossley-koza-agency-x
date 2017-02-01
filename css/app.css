@@ -166,6 +166,22 @@
 
 }
 
+/*SERVICES STYLES START HERE*/
+
+#pricing p
+{
+	text-align: center;
+	font-family: "latolight";
+	margin-top: 25px;
+	margin-bottom: 50px;
+	color: #52527c;
+}
+
+.bolder
+{
+	font-weight: bold;
+}
+
 /*FONTS CSS STARTS HERE*/
 
 @font-face {
