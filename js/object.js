@@ -1,5 +1,6 @@
 var tmnlObject = {
 	one:{
+
 		pic: "<p class=\'centerImg\'><img class=\"tmnlImg\" src=\'images/fritha.png\'></p>",
 		name: "<h2>Fritha Blackman</h2>",
 		case: "<p>Goblin Infestatio</p>",
@@ -16,5 +17,6 @@ var tmnlObject = {
 		name: "<h2>Orry Tatlock</h2>",
 		case: "<p>Strange Goings-On</p>",
 		testimonial: "<p>When Old Missus Newtswart went missing, I knew something was up. Thanks for the help, Hat & Cloak!</p>"
+
 	}
 }

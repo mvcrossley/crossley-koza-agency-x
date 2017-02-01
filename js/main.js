@@ -4,14 +4,15 @@
 	var name = document.querySelector(".tmnlName");
 	var caseP = document.querySelector(".tmnlCase");
 	var text = document.querySelector(".tmnlText");
+
 	var tmnlCon = document.querySelector("#tmnlCon");
 
-	//console.log(tmnlCon);
 
 	/*tmnlObject.forEach(name, function(){
 		console.log();
 		tmnlCon.innerHTML = '<h2>'+element+'</h2>';
 	});*/
+
 
 	// function tmnlContent(){
 
@@ -54,6 +55,7 @@
 	// }
 
 	//window.addEventListener("load", tmnlContent, false);
+
 
 	/*
 		for (var i in tmnlObject){
