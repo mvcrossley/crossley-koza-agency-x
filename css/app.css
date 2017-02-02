@@ -2,6 +2,7 @@
 
 #logoDiv
 {
+	background-image: url("../images/header_bg.jpg");
 	background-color: #ece5f5;
 }
 
@@ -36,6 +37,12 @@
 	font-size: 20px;
 }
 
+#mainNav ul li a:hover
+{
+	color: #b48dbf;
+	transition: 0.5s ease-in;
+}
+
 #footerDiv
 {
 	background-color: #cfcfe9;
@@ -66,6 +73,77 @@
 	color: #52527c;
 	font-family: 'playfair_displayregular';
 	font-size: 15px;
+}
+
+.mainTitle
+{
+	font-family: "fonts/abril_fatfaceregular";
+	color: #52527c;
+	font-size: 27px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.mainPara
+{
+	font-family: 'playfair_displayregular';
+	color: #2d2d4d;
+	font-size: 15px;
+	width: 80%;
+	margin: auto;
+	margin-top: 15px;
+	text-align: center;
+}
+
+#contentCon1
+{
+	text-align: center;
+	display: inline block;
+}
+
+#contentCon2
+{
+	text-align: center;
+	display: inline block;
+}
+
+.contentH3
+{
+	font-family: 'playfair_displaybold';
+	color: #2d2d4d;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.contentH4
+{
+	font-family: 'playfair_displaybold';
+	color: #2d2d4d;
+	font-size: 18px;
+	text-align: center;
+}
+
+.contentPara
+{
+	font-family: 'playfair_displayregular';
+	color: #2d2d4d;
+	font-size: 15px;
+	width: 200px;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 75px;
+}
+
+.contentImg
+{
+	width: 200px;
+	margin-top: 50px;
+}
+
+.centerImg
+{
+	margin: auto;
 }
 
 /*INDEX MEDIA QUERIES HERE*/
@@ -107,107 +185,6 @@
 		font-size: 15px;
 	}
 
-}
-
-/*HOME STYLES START HERE*/
-
-#homeTitle
-{
-	font-family: "playfair_displaybold";
-	font-size: 25px;
-	letter-spacing: 3px;
-	margin-top: 30px;
-	margin-bottom: 15px;
-	color: #2d2d4d;
-	text-align: center;
-}
-
-#mission
-{
-	font-family: "latolight";
-	color: #2d2d4d;
-	padding: 15px;
-}
-
-.pageTitle
-{
-	font-family: "fonts/abril_fatfaceregular";
-	color: #52527c;
-	font-size: 27px;
-	text-align: center;
-	margin-top: 20px;
-}
-
-.testimonial h2
-{
-	font-family: 'playfair_displaybold';
-	color: #2d2d4d;
-	font-size: 25px;
-	text-align: center;
-}
-
-.testimonial p
-{
-	font-family: 'playfair_displayregular';
-	color: #2d2d4d;
-	font-size: 15px;
-	text-align: center;
-}
-
-.tmnlImg
-{
-	width: 200px;
-	margin-top: 50px;
-}
-
-.centerImg
-{
-	text-align: center;
-}
-
-/*HOME MEDIA QUERIES HERE*/
-
-@media (min-width: 900px){
-	#homeTitle
-	{
-		text-align: left;
-		margin-top: 75px;
-	}
-
-	#homePic
-	{
-		width: 700px;
-	}
-
-	#mission
-	{
-		padding-right: 50px;
-	}
-
-}
-
-@media (min-width: 650px max-width: 900px){
-	#mission
-	{
-		padding-right: 50px;
-	}
-
-}
-
-/*SERVICES STYLES START HERE*/
-
-#pricing p
-{
-	text-align: center;
-	font-family: "latolight";
-	margin-top: 25px;
-	margin-bottom: 50px;
-	color: #52527c;
-}
-
-.bolder
-{
-	font-weight: bold;
 }
 
 /*FONTS CSS STARTS HERE*/
