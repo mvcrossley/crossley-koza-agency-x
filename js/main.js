@@ -1,11 +1,79 @@
 (function(){
 
-	var img = document.querySelector(".tmnlImg");
-	var name = document.querySelector(".tmnlName");
-	var caseP = document.querySelector(".tmnlCase");
-	var text = document.querySelector(".tmnlText");
+	var navButton = document.querySelectorAll('.navButton');
+	var pageTitle = document.querySelector("#pageTitle");
+	var pageDesc = document.querySelector("#pageDesc");
+	var conCon = document.querySelector("#contentCon");
+	var conCon1 = document.querySelector("#contentCon1");
+	var conCon2 = document.querySelector("#contentCon2");
+	var conImg1 = document.querySelector("#contentCon1 img");
+	var conImg2 = document.querySelector("#contentCon2 img");
+	var conName1 = document.querySelector("#contentCon1 h3");
+	var conName2 = document.querySelector("#contentCon2 h3");	
+	var conNameSub1 = document.querySelector("#contentCon1 h4");
+	var conNameSub2 = document.querySelector("#contentCon2 h4");
+	var conText1 = document.querySelector("#contentCon1 p");
+	var conText2 = document.querySelector("#contentCon2 p");
+	var i;
 
-	var tmnlCon = document.querySelector("#tmnlCon");
+	var newClass;
+	
+
+
+	function changePage(){
+		pageTitle.classList.remove(newClass); //Clears any existing classes so that it may change back each time
+		pageDesc.classList.remove(newClass);
+		conCon.classList.remove(newClass);
+
+		pageTitle.classList.add(newClass);
+		pageDesc.classList.add(newClass);
+		//console.log(introObject[this.id].desc);
+		newClass = this.id;
+		pageTitle.firstChild.nodeValue = introObject[newClass].title; //These are accessing parts of an object located in contentObject
+		pageDesc.firstChild.nodeValue = introObject[newClass].desc;
+		
+		var dObject = detailObject[newClass];
+
+		if (dObject['con1']){
+			conImg1.src = dObject['con1'].image;
+			conName1.firstChild.nodeValue = dObject['con1'].name;
+			conNameSub1.firstChild.nodeValue = dObject['con1'].desc;
+			conText1.firstChild.nodeValue = dObject['con1'].text;
+		}
+		if (dObject['con2']){
+			conImg2.src = dObject['con2'].image;
+			conName2.firstChild.nodeValue = dObject['con2'].name;
+			conNameSub2.firstChild.nodeValue = dObject['con2'].desc;
+			conText2.firstChild.nodeValue = dObject['con2'].text;
+		}		
+	}
+
+
+	[].forEach.call(navButton, function(e) {
+		e.addEventListener('click', changePage, true);
+	});
+
+	pageTitle.firstChild.nodeValue = introObject["home"].title; //These change the content on load
+	pageDesc.firstChild.nodeValue = introObject["home"].desc;
+	pageTitle.classList.add("home");
+	var detailHome = detailObject['home']
+	console.log(detailHome['con1']);
+
+	if (detailHome['con1']){
+			conImg1.src = detailHome['con1'].image;
+			conName1.firstChild.nodeValue = detailHome['con1'].name;
+			conNameSub1.firstChild.nodeValue = detailHome['con1'].desc;
+			conText1.firstChild.nodeValue = detailHome['con1'].text;
+		}
+	if (detailHome['con2']){
+		conImg2.src = detailHome['con2'].image;
+		conName2.firstChild.nodeValue = detailHome['con2'].name;
+		conNameSub2.firstChild.nodeValue = detailHome['con2'].desc;
+		conText2.firstChild.nodeValue = detailHome['con2'].text;
+	}
+
+
+})();
 
 
 	/*tmnlObject.forEach(name, function(){
@@ -74,11 +142,22 @@ for (var c in cars) {
     newElement.className = "car";
     newElement.innerHTML = cars[c];
     document.body.appendChild(newElement);
-}*/
+}
+
+
+for(var i in dObject){
+			console.log(dObject[i]);
+			//tmnlCon.innerHTML = '<div class=\'detailCon small-12 medium-6 columns\'>'+tmnlObject[i].pic+tmnlObject[i].name+tmnlObject[i].case+tmnlObject[i].testimonial+'</div>';
+			var newDiv = document.createElement('div');
+			newDiv.classList.add(newClass);
+			newDiv.classList.add(newClass);
+			newDiv.innerHTML = '<h2>'+dObject[i].name+'</h2><p>'+dObject[i].desc+'</p>';
+			document.body.appendChild(newDiv);
+		}*/
 
 	//window.addEventListener('load', tmnlDump, false);
 
-})();
+
 
 /*
 	var theImages = document.querySelectorAll(".image-holder");
