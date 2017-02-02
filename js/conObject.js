@@ -1,10 +1,10 @@
 var introObject = {
 	home:{		title: "No Mystery Too Small!",
-				desc: "From missing items to full-on goblin infestations, we’ve got you covered.</br>Hat & Cloak Investigative Bureau is your very own professional mystery-solving, quest-completing team. For a fair price we will assess your situation, and respond in record time.</br>When it comes to experienced adventurers, look no further."
+				desc: "From missing items to full-on goblin infestations, we’ve got you covered. Hat & Cloak Investigative Bureau is your very own professional mystery-solving, quest-completing team. For a fair price we will assess your situation, and respond in record time. When it comes to experienced adventurers, look no further."
 	},
 
 	team:{		title: "The Hat & Cloak Team",
-				desc: "Get to know us!"
+				desc: "Get to know us! We are the dedicated professionals behind Hat & Cloak Investigative Bureau. We have been working locally for over 10 years, and we know the area inside and out."
 	},
 
 	services:{	title: "What We Offer",
@@ -14,14 +14,14 @@ var introObject = {
 
 var detailObject = {
 	home:{		con1:{	image: "images/beatrix.png",
-						name: "Beartix Willow",
+						name: "Beatrix Willow",
 						desc: "Lost Family Heirloom",
-						text: "When I lost my talisman, I thought it was gone forever! Hat & Cloak found it right away!"
+						text: "\"When I lost my blessed talisman, I thought it was gone forever! Hat & Cloak found it right away!\""
 				},
 				con2:{	image: "images/orry.png",
 						name: "Orry Tatlock",
 						desc: "Strange Goings-On",
-						text: "When Old-Missus Newtwart went missing, 'Oi knew somethin' was awry. Thanks for the help, Hat & Cloak!"
+						text: "\"When Old-Missus Newtwart went missing, 'Oi knew somethin' was awry. Thanks for the help, Hat & Cloak!\""
 				}
 	},
 	team:{		con1:{	image: "images/ian.png",
